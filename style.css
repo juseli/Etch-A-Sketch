@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    align-items: flex-start;
+}
+
+.erase {
+    max-height: 50px;
+    max-width: 80px;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+.container {
+  display: flex;
+  margin: 100px;
+  border: solid;
+  border-color: black;
+}
+
+.grid {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: flex-start;
+    
+}
