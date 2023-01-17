@@ -1,27 +1,66 @@
 body {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(214, 48, 48);
+    
 }
 
-.erase {
-    max-height: 50px;
-    max-width: 80px;
+button {
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
     display: flex;
-    padding-left: 100px;
-    padding-right: 100px;
+    flex-direction: column;
+}   
 
+h1 {
+    display: flex;
+    flex-flow: row wrap;
 }
+
 .container {
+    display:flex;
+    flex-direction: row;
+}
+  
+.options {
+    display:flex;
+    flex-wrap: column wrap;
+    margin: 40px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    border: solid;
+    border-color: black;
+    position: absolute;
+}
+
+.etch {
   display: flex;
-  margin: 100px;
   border: solid;
   border-color: black;
+  position: absolute;
+  flex-wrap: wrap;
 }
 
 .grid {
-    height: 40px;
-    width: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;  
+
+}
+
+.gridTwo {
     display: flex;
     align-items: flex-start;
-    
+    flex-direction: row;
 }
