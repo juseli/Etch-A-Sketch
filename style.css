@@ -9,13 +9,14 @@ body {
 
 button {
     height: 40px;
-    width: 100px;
+    width: 120px;
     padding: 10px;
     margin: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #000000;
     color: white;
 }
+
 
 ul {
     list-style: none;
@@ -36,11 +37,11 @@ h1 {
 .container {
     display: flex;
     flex-direction: row;
-   
+
 }
   
 .options {
-
+    display:flex;
     margin: 20px;
 
 }
@@ -71,6 +72,27 @@ h1 {
     flex-basis: 20%;    
 }
 
-
-
-  
+.slider {
+    -webkit-appearance: none;
+    width: 120px;
+    height: 25px;
+    background: #929292;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #000000;
+    cursor: pointer;
+  }
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #060606;
+    cursor: pointer;
+  }

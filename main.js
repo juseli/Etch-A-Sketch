@@ -27,7 +27,7 @@ function createGrid () {
             
         gridContainer.appendChild(grid);
         }
-       
+        
     }
     
     sliderValue.innerHTML = size + "x" + size;
@@ -50,4 +50,29 @@ document.getElementById("clearBtn").onclick = clear;
 function clear () {
     gridContainer.innerHTML = ""
     createGrid ();
+}
+
+document.getElementById("blackBtn").onclick = black;
+
+function black () {
+    gridContainer.addEventListener("mouseover", function(event){
+        if (event.target.classList.contains("grid")) {
+            event.target.style.backgroundColor = "black";
+        }
+    });
+}
+
+document.getElementById("rgbBtn").onclick = rgb;
+
+function rgb () {
+    gridContainer.addEventListener("mouseover", function(event){
+        if (event.target.classList.contains("grid")) {
+            event.target.style.backgroundColor = randomColor ();
+        }
+    });
+}
+
+function randomColor () {
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    return "#" + randomColor;
 }
